@@ -53,12 +53,16 @@ const renderComponent = (data) => {
     : (template += `Waiting for your first Work Unit!`);
   template += `<section class="banano__info"> <h2>${chrome.i18n.getMessage(
     "lastUpdate"
-  )}</h2><p> ${
+  )}</h2><p> ${datetime.getFullYear()}-${
     datetime.getMonth() + 1
-  }/${datetime.getDate()} - ${datetime.getHours()}:${
+  }-${datetime.getDate()} ${datetime.getHours()}:${
     10 > datetime.getMinutes()
-      ? `0${datetime.getMinutes()}`
+      ? `0${datetime.getMinutes()}:`
       : datetime.getMinutes()
+  }:${
+    10 > datetime.getSeconds()
+      ? `${datetime.getSeconds()}0`
+      : datetime.getSeconds()
   }</p>
     </section>
     <section class="banano__info">
@@ -72,10 +76,8 @@ const renderComponent = (data) => {
     
     <section class="banano__info">
     <h2>${chrome.i18n.getMessage("AccCreated")}</h2><p> ${
-    new Date(data[0].user.created_at).getMonth() + 1
-  }/${new Date(data[0].user.created_at).getDate()}/${new Date(
     data[0].user.created_at
-  ).getFullYear()}</p>
+  }</p>
     </section>
     `;
 
