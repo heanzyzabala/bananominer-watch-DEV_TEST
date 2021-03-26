@@ -29,10 +29,11 @@ export const fetchData = async (user) => {
         "Content-Type": "application/json",
       }
     ),
+    fetch(`https://api.coingecko.com/api/v3/coins/banano?localization=true&tickers=true`),
   ]);
-  const data = await Promise.all([bananoData[0].json(), bananoData[1].json()]);
+  const data = await Promise.all([bananoData[0].json(), bananoData[1].json(), bananoData[2].json()]);
   console.log(data);
-  if (bananoData[0].status === 200 && bananoData[1].status === 200) {
+  if (bananoData[0].status === 200 && bananoData[1].status === 200 && bananoData[2].status === 200) {
     error.classList.remove("open");
     bananoMenuCertificates(data);
     renderComponent(data);
@@ -48,6 +49,9 @@ const renderComponent = (data) => {
   let template = ``;
   let totalAmount = 0;
   let datetime = new Date();
+  const prices = data[2].market_data.current_price
+  const price = prices['usd']
+
   data[1].wus > 0
     ? (template += checkYourWus(data[0], data[1]))
     : (template += `Waiting for your first Work Unit!`);
@@ -78,15 +82,17 @@ const renderComponent = (data) => {
   ).getFullYear()}</p>
     </section>
     `;
-
   data[0].payments &&
     data[0].payments.forEach((el) => {
       totalAmount += el.amount;
     });
+  
+  const convertedAmount = (totalAmount * price).toFixed(3)
+
   template += `<section class="banano__info"><h2>Score:</h2><p>${data[1].teams[0].credit}</p></section> `;
   template += `<section class="banano__info"><h2>${chrome.i18n.getMessage(
     "banEarned"
-  )}</h2><p>${totalAmount}</p></section>`;
+  )}</h2><p>${totalAmount} ($${convertedAmount} - $${price} per BAN)</p></section>`;
   template += `<section class="banano__info"><h2>${chrome.i18n.getMessage(
     "lastWU"
   )}</h2><p> ${data[1].last}</p></section>`;
