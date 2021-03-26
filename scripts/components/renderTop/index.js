@@ -15,7 +15,7 @@ export const renderTop = () => {
       <ul class="banano__menu--links">
       <li>
       <a href="https://ban.family/fah" class="banano__top" title="Go to PPD-BAN estimation tool" target="_blank" style="padding-top:3px;">
-        PPD-BAN estimation tool   
+        PPD-BAN Calculator   
       </a>
       </li>
       <li class="banano__menu--certificates"></li>
