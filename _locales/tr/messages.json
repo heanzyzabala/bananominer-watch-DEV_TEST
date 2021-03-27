@@ -2,8 +2,8 @@
     "extDescription": {
         "message": "www.banano.cc ekibi için tüm Folding@home katkı istatistiklerinizi ve kazançlarınızı görüntüleyin"
     },
-    "message": {
-        "Find me!": "Beni bul!"
+    "Find me!": {
+        "message": "Beni bul!"
     },
     "yourUser": {
         "message": "Kullanıcı ID:"
