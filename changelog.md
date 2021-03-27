@@ -6,7 +6,6 @@ This version still has the workaround adressing an issue where users saw their a
 - Activated Turkish language
 - Changed PPD-BAN estimation tool to PPD-BAN Calculator, also now links to [https://banano.report/] now instead of the Excel tool
 
-
 ## V1.3.4 HOTFIX
 
 This version is a HOTFIX (workaround) addressing issues where users could not see their stats or saw their account incorrectly marked as inactive
