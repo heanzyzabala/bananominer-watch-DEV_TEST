@@ -186,6 +186,10 @@ input.banano__input {
 .banano__info {
   display: flex;
 }
+.banano__info--item h2 {
+  padding-left: 10px;
+  padding-right: 0px;
+}
 .banano__suspended--info {
   display: inherit;
   background: #4dc44d;

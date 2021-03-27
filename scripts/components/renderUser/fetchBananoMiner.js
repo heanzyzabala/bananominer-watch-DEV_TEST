@@ -99,6 +99,15 @@ const renderComponent = (data) => {
   template += `<section class="banano__info"><h2>${chrome.i18n.getMessage(
     "totalWU"
   )}</h2><p>${data[1].wus}</p></section>`;
+  template += `<section class="banano__info"><h2>${chrome.i18n.getMessage(
+    "activeClients"
+  )}</h2></section>`;
+  template += `<section class="banano__info banano__info--item"><h2>${chrome.i18n.getMessage(
+    "within50Days"
+  )}</h2><p>${data[1].active_50}</p></section>`;
+  template += `<section class="banano__info banano__info--item"><h2>${chrome.i18n.getMessage(
+    "within7Days"
+  )}</h2><p>${data[1].active_7}</p></section>`;
   template += `<img class="monkey__user" 
   src="https://monkey.banano.cc/api/v1/monkey/${data[0].user.name}" 
   title="monKey for ban_XXX"/>

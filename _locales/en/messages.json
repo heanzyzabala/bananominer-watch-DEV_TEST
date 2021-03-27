@@ -29,6 +29,15 @@
   "banEarned": {
     "message": "Total BAN earned:"
   },
+  "activeClients": {
+    "message": "Active clients:"
+  },
+  "within50Days": {
+    "message": "within 50 days:"
+  },
+  "within7Days": {
+    "message": "within 7 days:"
+  },
   "lastWU": {
     "message": "Last Work Unit mined:"
   },
