@@ -15,18 +15,12 @@ BananoMiner Watch is a **Chrome Browser Extension** that shows you all stats abo
 If you want to learn more about how the Banano community is providing a valuable contribution to medical research you can check out [this article](https://www.publish0x.com/banano/heres-how-you-can-help-fight-coronavirus-and-youll-even-get-xmvdpq?a=QJ0dNjvdLO)
 
 
-# What's new?
+# :scroll: Changelog
 
-## Temporary HOTFIX still in place
-This version still has the workaround adressing an issue where users saw their account incorrectly marked as inactive.
-## Added Swedish language
-Thanks to manpan!
-## Activated Turkish language
-It was there for a long time but not in the package due to human error
-
-## :scroll: Changelog
-
-You can find the comprehensive Changelog [here](./changelog.md)
+- Temporary HOTFIX still in place. This version still has the workaround adressing an issue where users saw their account incorrectly marked as inactive.
+- Added Swedish language. Thanks to manpan!
+- Activated Turkish language. It was there for a long time but not in the package due to human error
+- You can find the comprehensive Changelog [here](./changelog.md)
 
 # How to install?
 
