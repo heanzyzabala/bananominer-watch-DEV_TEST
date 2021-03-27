@@ -1,50 +1,65 @@
 {
-  "extDescription": {
-    "message": "Displays all your Folding@home contribution stats and earnings for the www.banano.cc team."
-  },
-  "findMe": {
-    "message": "Find me!"
-  },
-  "yourUser": {
-    "message": "Your User ID:"
-  },
-  "errEmpty": {
-    "message": "Please input User ID."
-  },
-  "errShort": {
-    "message": "User ID must be 7 characters. Please try again."
-  },
-  "update": {
-    "message": "Update!"
-  },
-  "lastUpdate": {
-    "message": "Last update:"
-  },
-  "banAdr": {
-    "message": "BAN address:"
-  },
-  "AccCreated": {
-    "message": "Account created on:"
-  },
-  "banEarned": {
-    "message": "Total BAN earned:"
-  },
-  "lastWU": {
-    "message": "Last Work Unit mined:"
-  },
-  "totalWU": {
-    "message": "Total Work Units:"
-  },
-  "lang": {
-    "message": "English"
-  },
-  "extName": {
-    "message": "BananoMiner Watch"
-  },
-  "langCode": {
-    "message": "en"
-  },
-  "errNotfound": {
-    "message": "User ID doesn´t exist. Please try again."
-  }
+    "extDescription": {
+        "message": "Visar all din Folding@home statistik och intjänat belopp för www.banano.cc teamet."
+    },
+    "findMe": {
+        "message": "Hitta mig!"
+    },
+    "yourUser": {
+        "message": "Ditt användar ID:"
+    },
+    "errEmpty": {
+        "message": "Vänligen ange ditt användar ID"
+    },
+    "errShort": {
+        "message": "Användar ID måste bestå av 7 tecken. Försök igen."
+    },
+    "update": {
+        "message": "Uppdatera!"
+    },
+    "lastUpdate": {
+        "message": "Senast uppdaterad:"
+    },
+    "banAdr": {
+        "message": "BAN adress:"
+    },
+    "AccCreated": {
+        "message": "Konto skapad den:"
+    },
+    "banEarned": {
+        "message": "Totalt intjänade BAN:"
+    },
+    "lastWU": {
+        "message": "Senaste Work Unit:"
+    },
+    "totalWU": {
+        "message": "Totala Work Units:"
+    },
+    "lang": {
+        "message": "Svenska"
+    },
+    "extName": {
+        "message": "BananoMiner Watch"
+    },
+    "langCode": {
+        "message": "sv"
+    },
+    "errNotfound": {
+        "message": "Användar ID existerar ej. Försök igen."
+    },
+    "StoreLongDesc": {
+        "message": "BananoMiner Watch är ett tillägg som visar dig all statistik angående dina bidrag till teamet www.banano.cc hos Folding@home, inklusive intjänade $BAN via din konfiguration genom https://bananominer.com/.\nDetta är ett gemensamt BANANO projekt. Skapat av apor från Bananodjungeln, för apor i Bananodjungeln.\n\nOm du vill veta mer om kryptovalutan BANANO, vänligen besök www.banano.cc\n\nTack\nVi vill tacka BANANO communityn så hjärtligt för alla insatser och all stöd. BAN fam är best fam! 💛\n\nÖversättning och korrekturläsning:\nAhmedDhaif93 för arabiska\nGoose för kinesiska\nKryptopia fär danska\nATH för nederlänska\nLiberty_Seed and iazid för franska\nsebrock för tyska\nDemetrius för grekiska\nSkittish för hindi\nPramono för indonesiska\nMacaleon för italienska\nAfrica by Toto för japanska\nmina_hanem för farsi\nnknown för portugisiska\npygo för norska\nMidNightSonne and andrecrjr för brasiliansk portugisiska\nYaroslavaWise and Nomina för ryska\nKyle London 92 för serbiska\nCristalla för spanska\nmanpan för svenska\nTahadorukk | Guns'NRoses för turkiska\nTu Hoang för vietnamesiska\nbbedward för att du uppmanar djungeln att stödja\n\nGrafisk design\nOops\n\nNyckelord:\nfolding foldingathome folding@home crypto cryptocurrency banano"
+    },
+    "hamb_calc": {
+        "message": "PPD-BAN Kalkylator"
+    },
+    "acc_status": {
+        "message": "Kontostatus: Aktiv"
+    },
+    "cert_points": {
+        "message": "Certifikat (Poäng)"
+    },
+    "cert_wus": {
+        "message": "Certifikat (WUs)"
+    }
 }
