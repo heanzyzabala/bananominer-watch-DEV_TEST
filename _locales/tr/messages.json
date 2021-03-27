@@ -1,0 +1,65 @@
+{
+    "extDescription": {
+        "message": "www.banano.cc ekibi için tüm Folding@home katkı istatistiklerinizi ve kazançlarınızı görüntüleyin"
+    },
+    "message": {
+        "Find me!": "Beni bul!"
+    },
+    "yourUser": {
+        "message": "Kullanıcı ID:"
+    },
+    "errEmpty": {
+        "message": "Lütfen kullanıcı ID girin"
+    },
+    "errShort": {
+        "message": "Kullanıcı ID 7 karakter olmalıdır.Lütfen tekrar deneyin."
+    },
+    "update": {
+        "message": "Güncelle!"
+    },
+    "lastUpdate": {
+        "message": "Son güncelleme:"
+    },
+    "banAdr": {
+        "message": "BAN adresi:"
+    },
+    "AccCreated": {
+        "message": "Hesap oluştur:"
+    },
+    "banEarned": {
+        "message": "Toplam kazanılan BAN:"
+    },
+    "lastWU": {
+        "message": "Çıkartılan son birim:"
+    },
+    "totalWU": {
+        "message": "Toplam iş birimi:"
+    },
+    "lang": {
+        "message": "Türkçe"
+    },
+    "extName": {
+        "message": "BananoMiner Watch"
+    },
+    "langCode": {
+        "message": "tr"
+    },
+    "errNotfound": {
+        "message": "Kullanıcı ID mevcut değil. Lütfen tekrar deneyin."
+    },
+    "StoreLongDesc": {
+        "message": "BananoMiner Watch, https://bananominer.com/ adresinden yapılandırmanızı kullanarak  hali hazırda kazandığınız $BAN tutarı da dahil olmak üzere Folding@home'daki www.banano.cc ekibine yaptığınız katkılarla ilgili tüm istatistikleri gösteren bir uzantıdır.\nBu bir BANANO topluluk projesi. Banano  Maymunları tarafından Banano Maymunları için yapılmıştır.\n\nBANANO kripto para birimi hakkında daha fazla bilgi edinmek isterseniz, lütfen www.banano.cc adresini ziyaret edin.\n\nSon olarak:\nBANANO topluluğunda bunun yapılmasına katkıda bulunan ve bunu destekleyen herkese içten teşekkürlerimizi sunarız. BAN fam - en iyi fam! 💛\n\nÇeviri ve Düzeltme:\nTürkçe İçin Tahadorukk | Guns'NRoses\nArapça için AhmedDhaif93\nÇince için Goose\nFlemenkçe için ATH\nFransızca için Liberty_Seed ve İazid\nBahasa Endonezya için Pramono\nİtalyanca için Lore ve Macaleon\nJaponca için Africa by Toto\nFarsça için mina_hanem\nPortekizce için Nknown\nBrezilya Portekizcesi için MidNightSonne\nRusça için YaroslavaWise\nİspanyolca için Cristalla\nNorveçce için pygo\nbbedward Banano'ya desteğinden dolayı\n\nGrafik Tasarım Destekçisi\nOops\n\nAnahtar Kelimeler:\nfolding foldingathome folding@home crypto cryptocurrency banano"
+    },
+    "hamb_calc": {
+        "message": ""
+    },
+    "acc_status": {
+        "message": ""
+    },
+    "cert_points": {
+        "message": "Certificate (Points)"
+    },
+    "cert_wus": {
+        "message": "Certificate (WUs)"
+    }
+}
