@@ -3,6 +3,7 @@ import { updateUserData, removeUserData } from "./updaters.js";
 import { validationInputAddress } from "./validationInput.js";
 import { checkYourWus } from "./checkWus.js";
 import { bananoMenuCertificates } from "../renderTop/index.js";
+import footerMenu from "./footerMenu.js";
 
 export async function getDataBananoMiner() {
   let user = userInput.value;
@@ -98,12 +99,12 @@ const renderComponent = (data) => {
   template += `<img class="monkey__user" 
   src="https://monkey.banano.cc/api/v1/monkey/${data[0].user.name}" 
   title="monKey for ban_XXX"/>
-  <button class="remove">
-    <img src="./assets/trash.png" width="25" />
-  </button>
+  ${footerMenu()}
   `;
   localStorage.setItem("user_id", data[0].user.id);
   localStorage.setItem("template", template);
+  localStorage.setItem("chart-data", JSON.stringify(data[0]));
+
   if (template) {
     updateUserData();
     return true;

@@ -156,8 +156,6 @@ section.banano__input-section {
 }
 
 .remove {
-  display: block;
-  margin: 0 auto;
   background: none;
 }
 
@@ -268,4 +266,15 @@ button {
   transition: all 0.5s linear;
 }
 
-/*n7iy7lnejdxv*/
+footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.block--charts {
+  width: 400px;
+}
+
+.banano--chart__title {
+  text-align: center;
+}
