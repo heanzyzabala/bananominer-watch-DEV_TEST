@@ -24,11 +24,12 @@ export const renderTop = () => {
 };
 
 export const bananoMenuCertificates = (data) => {
+  const pointsCertLink = data[1].credit_cert && data[1].credit_cert.replace('&type=score', '')
   if (data[1].credit_cert && data[1].wus_cert)
     document.querySelector(".banano__menu--certificates").innerHTML = `
   <li>
   <a class="banano__top" title="Download Points Certificate from F@H" href="${
-    data[1].credit_cert
+    pointsCertLink
   }">${"Certificate (Points)"}</a></li>
   <li><a class="banano__top" title="Download Work Units Certificate from F@H"  href="${
     data[1].wus_cert
