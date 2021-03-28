@@ -1,8 +1,15 @@
-import { userInput, error, button, remove } from "../helper/querySelectors.js";
+import {
+  userInput,
+  error,
+  button,
+  remove,
+  bananoSection,
+} from "../helper/querySelectors.js";
 import { updateUserData, removeUserData } from "./updaters.js";
 import { validationInputAddress } from "./validationInput.js";
 import { checkYourWus } from "./checkWus.js";
 import { bananoMenuCertificates } from "../renderTop/index.js";
+import footerMenu from "./footerMenu.js";
 
 export async function getDataBananoMiner() {
   let user = userInput.value;
@@ -57,12 +64,16 @@ const renderComponent = (data) => {
     : (template += `Waiting for your first Work Unit!`);
   template += `<section class="banano__info"> <h2>${chrome.i18n.getMessage(
     "lastUpdate"
-  )}</h2><p> ${
+  )}</h2><p> ${datetime.getFullYear()}-${
     datetime.getMonth() + 1
-  }/${datetime.getDate()} - ${datetime.getHours()}:${
+  }-${datetime.getDate()} ${datetime.getHours()}:${
     10 > datetime.getMinutes()
-      ? `0${datetime.getMinutes()}`
+      ? `0${datetime.getMinutes()}:`
       : datetime.getMinutes()
+  }:${
+    10 > datetime.getSeconds()
+      ? `${datetime.getSeconds()}0`
+      : datetime.getSeconds()
   }</p>
     </section>
     <section class="banano__info">
@@ -76,10 +87,8 @@ const renderComponent = (data) => {
     
     <section class="banano__info">
     <h2>${chrome.i18n.getMessage("AccCreated")}</h2><p> ${
-    new Date(data[0].user.created_at).getMonth() + 1
-  }/${new Date(data[0].user.created_at).getDate()}/${new Date(
     data[0].user.created_at
-  ).getFullYear()}</p>
+  }</p>
     </section>
     `;
   data[0].payments &&
@@ -111,14 +120,14 @@ const renderComponent = (data) => {
   template += `<img class="monkey__user" 
   src="https://monkey.banano.cc/api/v1/monkey/${data[0].user.name}" 
   title="monKey for ban_XXX"/>
-  <button class="remove">
-    <img src="./assets/trash.png" width="25" />
-  </button>
   `;
   localStorage.setItem("user_id", data[0].user.id);
   localStorage.setItem("template", template);
+  localStorage.setItem("chart-data", JSON.stringify(data[0]));
+
   if (template) {
     updateUserData();
+    bananoSection.innerHTML += footerMenu();
     return true;
   }
 };

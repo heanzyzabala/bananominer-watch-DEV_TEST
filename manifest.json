@@ -34,5 +34,6 @@
     "scripts/*.js",
     "scripts/components/helper/*.js",
     "scripts/components/renderUser/*.js"
-  ]
+  ],
+  "content_security_policy": "script-src 'self' https://cdn.jsdelivr.net/npm/chart.js@2.8.0; object-src 'self'"
 }

@@ -5,10 +5,6 @@ export const checkYourWus = (dataBanano, dataFold) => {
   let paydayTime = new Date(lastPayDay).getTime();
   let todayAtMidnight = todayDate().getTime();
 
-  return `
-    <section class="banano__info">
-    <p class="banano__info--status">Account Status: active</p>
-    </section>`;
   //Verify if the next day from the last work unit has payment, AND
   //Verify if the next day from last work unit done is bigger than today
   if (
@@ -16,11 +12,13 @@ export const checkYourWus = (dataBanano, dataFold) => {
     todayAtMidnight <= nextDayFromTheLastWorkUnit &&
     lastWorkUnit
   ) {
+    localStorage.setItem("wu-active", true);
     return `
     <section class="banano__info">
     <p class="banano__info--status">Account Status: active</p>
     </section>`;
   } else {
+    localStorage.setItem("wu-active", false);
     return `
     <section class="banano__suspended">
     <section class="banano__suspended--info">
