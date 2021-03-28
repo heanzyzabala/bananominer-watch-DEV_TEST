@@ -2,7 +2,7 @@ function footerMenu() {
   return `<footer>
  ${
    (localStorage.getItem("wu-active") === "true" &&
-     ` <a href="/charts.html">Payments Stats</a>`) ||
+     ` <a href="/charts.html">Payments History</a>`) ||
    ""
  }
     <button class="remove">
