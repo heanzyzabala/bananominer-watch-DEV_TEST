@@ -12,11 +12,13 @@ export const checkYourWus = (dataBanano, dataFold) => {
     todayAtMidnight <= nextDayFromTheLastWorkUnit &&
     lastWorkUnit
   ) {
+    localStorage.setItem("wu-active", true);
     return `
     <section class="banano__info">
     <p class="banano__info--status">Account Status: active</p>
     </section>`;
   } else {
+    localStorage.setItem("wu-active", false);
     return `
     <section class="banano__suspended">
     <section class="banano__suspended--info">

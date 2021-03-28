@@ -1,4 +1,10 @@
-import { userInput, error, button, remove } from "../helper/querySelectors.js";
+import {
+  userInput,
+  error,
+  button,
+  remove,
+  bananoSection,
+} from "../helper/querySelectors.js";
 import { updateUserData, removeUserData } from "./updaters.js";
 import { validationInputAddress } from "./validationInput.js";
 import { checkYourWus } from "./checkWus.js";
@@ -99,7 +105,6 @@ const renderComponent = (data) => {
   template += `<img class="monkey__user" 
   src="https://monkey.banano.cc/api/v1/monkey/${data[0].user.name}" 
   title="monKey for ban_XXX"/>
-  ${footerMenu()}
   `;
   localStorage.setItem("user_id", data[0].user.id);
   localStorage.setItem("template", template);
@@ -107,6 +112,7 @@ const renderComponent = (data) => {
 
   if (template) {
     updateUserData();
+    bananoSection.innerHTML += footerMenu();
     return true;
   }
 };
