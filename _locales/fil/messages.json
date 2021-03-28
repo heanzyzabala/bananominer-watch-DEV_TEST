@@ -1,0 +1,60 @@
+{
+    "extDescription": {
+      "message": "Ipinapakita ang lahat ng iyong kontribusyon at kita sa Folding@home para sa koponan ng www.banano.cc."
+    },
+    "findMe": {
+      "message": "Hanapin!"
+    },
+    "yourUser": {
+      "message": "Ang iyong User ID:"
+    },
+    "errEmpty": {
+      "message": "Punan ang User ID"
+    },
+    "errShort": {
+      "message": "Ang User ID ay hanggang 7 titik lamang. Ulitin."
+    },
+    "update": {
+      "message": "I-Update!"
+    },
+    "lastUpdate": {
+      "message": "Huling update:"
+    },
+    "banAdr": {
+      "message": "BAN address:"
+    },
+    "AccCreated": {
+      "message": "Pagkakagawa ng Account:"
+    },
+    "banEarned": {
+      "message": "Kabuuang BAN na kinita:"
+    },
+    "activeClients": {
+      "message": "Aktibong clients:"
+    },
+    "within50Days": {
+      "message": "sa loob ng 50 araw:"
+    },
+    "within7Days": {
+      "message": "sa loob ng 7 araw:"
+    },
+    "lastWU": {
+      "message": "Huling Work Unit na na-mined:"
+    },
+    "totalWU": {
+      "message": "Kabuuang Work Units:"
+    },
+    "lang": {
+      "message": "Filipino"
+    },
+    "extName": {
+      "message": "BananoMiner Watch"
+    },
+    "langCode": {
+      "message": "fil"
+    },
+    "errNotfound": {
+      "message": "Ang User ID ay hindi nakita. Ulitin."
+    }
+  }
+  
