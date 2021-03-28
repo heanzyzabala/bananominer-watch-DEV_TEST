@@ -19,7 +19,7 @@ const userChart = (canvasChart, data) => {
     type: "line",
     data: {
       labels: data
-        .slice(0, 7)
+        .slice(0, 19)
         .reverse()
         .map(
           (item) =>
@@ -31,9 +31,9 @@ const userChart = (canvasChart, data) => {
         {
           label: "Banano Amount",
           borderColor: "yellow",
-          borderWidth: 5,
+          borderWidth: 4,
           data: data
-            .slice(0, 7)
+            .slice(0, 19)
             .reverse()
             .map((item) => item.amount),
         },
@@ -42,7 +42,7 @@ const userChart = (canvasChart, data) => {
 
     // Configuration options go here
     options: {
-      aspectRatio: 2,
+      aspectRatio: 1.5,
     },
   });
 };
