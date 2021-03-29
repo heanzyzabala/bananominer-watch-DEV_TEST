@@ -4,7 +4,7 @@ export const renderChart = () => {
   ).innerHTML = `<a href="/banano.html" style="text-decoration:none">◀️ Return</a>`;
   const dataChart = JSON.parse(localStorage.getItem("chart-data"));
   let userParagraph = document.querySelector(".banano--chart__title");
-  userParagraph.innerText = `${dataChart.user.id} Payment`;
+  userParagraph.innerText = `${dataChart.user.id}'s Earnings`;
   let firstGraph = document.createElement("canvas");
   firstGraph.classList.add("banano--chart");
   document.querySelector(".block--charts__seven").appendChild(firstGraph);
