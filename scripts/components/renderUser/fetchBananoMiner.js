@@ -9,6 +9,8 @@ import { updateUserData, removeUserData } from "./updaters.js";
 import { validationInputAddress } from "./validationInput.js";
 import { checkYourWus } from "./checkWus.js";
 import { bananoMenuCertificates } from "../renderTop/index.js";
+import { formatDate } from '../helper/utils.js';
+
 import footerMenu from "./footerMenu.js";
 
 export async function getDataBananoMiner() {
@@ -55,26 +57,14 @@ export const fetchData = async (user) => {
 const renderComponent = (data) => {
   let template = ``;
   let totalAmount = 0;
-  let datetime = new Date();
   const prices = data[2].market_data.current_price
   const price = prices['usd']
-
   data[1].wus > 0
     ? (template += checkYourWus(data[0], data[1]))
     : (template += `Waiting for your first Work Unit!`);
   template += `<section class="banano__info"> <h2>${chrome.i18n.getMessage(
     "lastUpdate"
-  )}</h2><p> ${datetime.getFullYear()}-${
-    datetime.getMonth() + 1
-  }-${datetime.getDate()} ${datetime.getHours()}:${
-    10 > datetime.getMinutes()
-      ? `0${datetime.getMinutes()}:`
-      : datetime.getMinutes()
-  }:${
-    10 > datetime.getSeconds()
-      ? `${datetime.getSeconds()}0`
-      : datetime.getSeconds()
-  }</p>
+  )}</h2><p> ${formatDate(new Date())}</p>
     </section>
     <section class="banano__info">
     <h2>User ID:</h2><p>${data[0].user.id}</p>
@@ -87,7 +77,7 @@ const renderComponent = (data) => {
     
     <section class="banano__info">
     <h2>${chrome.i18n.getMessage("AccCreated")}</h2><p> ${
-    data[0].user.created_at
+    formatDate(data[0].user.created_at)
   }</p>
     </section>
     `;
@@ -104,7 +94,7 @@ const renderComponent = (data) => {
   )}</h2><p>${totalAmount.toFixed(2)} ($${convertedAmount} - $${price} per BAN)</p></section>`;
   template += `<section class="banano__info"><h2>${chrome.i18n.getMessage(
     "lastWU"
-  )}</h2><p> ${data[1].last}</p></section>`;
+  )}</h2><p> ${formatDate(data[1].last)}</p></section>`;
   template += `<section class="banano__info"><h2>${chrome.i18n.getMessage(
     "totalWU"
   )}</h2><p>${data[1].wus}</p></section>`;
