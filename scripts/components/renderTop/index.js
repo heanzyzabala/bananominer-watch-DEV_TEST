@@ -14,7 +14,12 @@ export const renderTop = () => {
     <nav class="banano--main-menu">
       <ul class="banano__menu--links">
       <li>
-      <a href="https://ban.family/fah" class="banano__top" title="Go to https://banano.report/" target="_blank" style="padding-top:3px;">
+      <a href="https://www.monkey2monkey.com/fh-stats/" class="banano__top" title="Go to https://www.monkey2monkey.com/fh-stats/" target="_blank" style="padding-top:3px;">
+        Your Mining Stats   
+      </a>
+      </li>
+	  <li>
+      <a href="https://banano.report/miner/your_miner_id" class="banano__top" title="Go to https://banano.report/" target="_blank" style="padding-top:3px;">
         PPD-BAN Calculator   
       </a>
       </li>
