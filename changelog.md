@@ -1,5 +1,11 @@
 # Bananominer-Watch Changelog
 
+## V1.3.6 Affenbande
+This version fixes the error where users were told their User ID didn't existed.
+Further improvements:
+-Fixed horizontal scrolling
+-Linking "Your Stats" im hamburger menu to https://www.monkey2monkey.com/fh-stats/
+
 ## V1.3.5 övermogen Axl Rose
 This version still has the workaround adressing an issue where users saw their account incorrectly marked as inactive.
 - Added Swedish language
