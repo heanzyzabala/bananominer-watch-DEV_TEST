@@ -89,7 +89,7 @@ const renderComponent = (data) => {
 
   const convertedAmount = (totalAmount * price).toFixed(2)
 
-  template += `<section class="banano__info"><h2>Score:</h2><p>${data[1].teams[0].credit}</p></section> `;
+  template += `<section class="banano__info"><h2>Score:</h2><p>${data[1].teams[0].score}</p></section> `;
   template += `<section class="banano__info"><h2>${chrome.i18n.getMessage(
     "banEarned"
   )}</h2><p>${totalAmount.toFixed(2)} ($${convertedAmount} - $${price} per BAN)</p></section>`;
