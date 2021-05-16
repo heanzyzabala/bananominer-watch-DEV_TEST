@@ -7,7 +7,7 @@
 [![Discord](https://img.shields.io/badge/discord-join%20chat-orange.svg)](https://chat.banano.cc/)
 
 
-![](./assets/BananoMiner-Watch_screen1_1.3.6.png)
+![](./assets/BananoMiner-Watch_result_1.3.6.png)
 
 (pictured: German version)
 
