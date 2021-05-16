@@ -1,4 +1,4 @@
-# Introduction to BananoMiner Watch V1.3.5 övermogen Axl Rose
+# Introduction to BananoMiner Watch V1.3.6 Affenbande
 ![Chrome Web Store](https://img.shields.io/chrome-web-store/users/pdnkikfbjfhikkpopfoaihhfbhaplpfc?label=chrome%20web%20store-users&style=plastic)
 ![Chrome Web Store](https://img.shields.io/chrome-web-store/rating/pdnkikfbjfhikkpopfoaihhfbhaplpfc?label=chrome%20web%20store-rating&style=plastic)
 ![GitHub top language](https://img.shields.io/github/languages/top/sebrock/bananominer-watch-DEV_TEST?style=plastic)
@@ -7,7 +7,7 @@
 [![Discord](https://img.shields.io/badge/discord-join%20chat-orange.svg)](https://chat.banano.cc/)
 
 
-![](./assets/BananoMiner-Watch_screen1_1.3.4.png)
+![](./assets/BananoMiner-Watch_screen1_1.3.6.png)
 
 (pictured: German version)
 
@@ -17,9 +17,10 @@ If you want to learn more about how the Banano community is providing a valuable
 
 # :scroll: Changelog
 
-- Temporary HOTFIX still in place. This version still has the workaround adressing an issue where users saw their account incorrectly marked as inactive.
-- Added Swedish language. Thanks to manpan!
-- Activated Turkish language. It was there for a long time but not in the package due to human error
+This version fixes the error where users were told their User ID didn't existed.
+Further improvements:
+-Fixed horizontal scrolling
+-Linking "Your Mining Stats" im hamburger menu to https://www.monkey2monkey.com/fh-stats/
 - You can find the comprehensive Changelog [here](./changelog.md)
 
 # How to install?
@@ -120,6 +121,9 @@ Our sincere thanks go to everyone in the BANANO community who contributed and su
 
 # :star2: March 2021 Hotfix help provided by :star2:
  - [heanzyzabala](https://github.com/heanzyzabala)
+
+# :star2: May 2021 Fix provided by :star2:
+ - [xtj7](https://github.com/xtj7)
 
 *That's it guys. If you need to talk to us you can find us on Twitter:
 - [André´s twitter](https://twitter.com/andrecrjr)
