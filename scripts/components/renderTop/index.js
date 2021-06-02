@@ -19,7 +19,7 @@ export const renderTop = () => {
       </a>
       </li>
 	  <li>
-      <a href="https://banano.report/miner/your_miner_id" class="banano__top" title="Go to https://banano.report/" target="_blank" style="padding-top:3px;">
+      <a href="https://turtlebyte.github.io/bananocalculator/" class="banano__top" title="Go to https://turtlebyte.github.io/bananocalculator/" target="_blank" style="padding-top:3px;">
         PPD-BAN Calculator   
       </a>
       </li>
