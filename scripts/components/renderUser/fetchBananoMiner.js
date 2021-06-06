@@ -92,7 +92,7 @@ const renderComponent = (data) => {
   template += `<section class="banano__info"><h2>Score:</h2><p>${data[1].teams[0].score}</p></section> `;
   template += `<section class="banano__info"><h2>${chrome.i18n.getMessage(
     "banEarned"
-  )}</h2><p>${totalAmount.toFixed(2)} ($${convertedAmount} - $${price} per BAN)</p></section>`;
+  )}</h2><p>${totalAmount.toFixed(2)} ($${convertedAmount} - $${price.toFixed(3)} per BAN)</p></section>`;
   template += `<section class="banano__info"><h2>${chrome.i18n.getMessage(
     "lastWU"
   )}</h2><p> ${formatDate(data[1].last)}</p></section>`;
